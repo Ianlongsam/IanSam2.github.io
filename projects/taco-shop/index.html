@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taco Shop</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            #menu, #take-order {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #take-order > p {
+                padding-right: 10px;
+            }
+
+            .menu-item {
+                border: 3px solid gray;
+            }
+
+            .menu-item > h4,
+            .menu-item > img {
+                padding: 10px;
+                padding-bottom: 5px;
+            }
+
+            img {
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents">
+            <nav>
+                <h1>Taco Shop</h1>
+                <div id="take-order">
+                    <p>When you're ready to place your order, click here: </p>
+                    <button>Place Order</button>
+                </div>
+            </nav>
+            <main>
+                <h3>Menu</h3>
+                <div id="menu">
+                    <div id="three-tacos" class="menu-item">
+                        <h4> #1 - Three Tacos</h4>
+                        <img src="https://m.media-amazon.com/images/I/71A43Va-sFS._AC_SL1500_.jpg">
+                        <h4>6.99</h4>
+                    </div>
+                    <div id="five-tacos" class="menu-item">
+                        <h4>#2 - Five Tacos</h4>
+                        <img src="https://3ven7mlv8ik44zpbr3b8t8zw-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/taco-1-682x1024.jpg">
+                        <h4>9.99</h4>
+                    </div>
+                    <div id="six-tacos" class="menu-item">
+                        <h4> #3 - Man covered in Maya and Ketchup</h4>
+                        <img src="https://compote.slate.com/images/74a26ae5-00bd-4114-bc5b-5548e9fa85ca.jpeg?width=780&height=520&rect=4684x3123&offset=0x0">
+                        <h4>20.99</h4>
+                    </div>
+                    <div id="seven-taco" class="menu-item">
+                        <h4> #4 - Number one fan</h4>
+                        <img src="https://i1.sndcdn.com/artworks-3UafC21smFyiStdm-JMsTfw-t500x500.jpg">
+                        <h4>30.99</h4>
+                    </div>
+
+                </div>
+                
+            </main>
+        </div>
+        <script>
+            var orderNumber = prompt('What combo number would you like to order?')
+            if (orderNumber === '1') {
+    total += 6.99;
+} else if (orderNumber === '2') {
+    total += 9.99
+} else {
+    alert('Sorry, you entered an incorrect combo number');
+}
+var chipsAnd = prompt('Would you like chips and queso ($2.99) or chips and guac($3.99)? Type in "queso" for chips and queso, "guac" for chips and quac, or "no" if you want to limit your happiness and not get chips.');
+if (chipsAnd === 'queso') {
+    total += 2.99;
+} else if (chipsAnd === 'guac') {
+    total += 3.99;
+} else if (chipsAnd === 'no') {
+    total += 0;
+} else {
+    alert('Sorry, the information you entered was not correct'); 
+}
+alert('The total for your order is ' + total + '. We\'ll have it out shortly. Thanks for visiting the taco shop, and have a nice day!');
+        </script>
+    </body>
+</html>
