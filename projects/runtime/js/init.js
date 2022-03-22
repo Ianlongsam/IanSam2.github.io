@@ -6,7 +6,6 @@ var init = function (window) {
         draw = opspark.draw,
         physikz = opspark.racket.physikz,
         world = opspark.world,
-        
         data = 'assets/spritesheet/halle/data-v9.json',
         app = opspark.makeApp(world.makeRules()),
         canvas = app.canvas, 
@@ -32,7 +31,8 @@ var init = function (window) {
     ground = opspark.makeGround(app);
 
     // TODO 2 : add background
-
+var background = opspark.makeBackground(app,ground);
+view.addChild(background); 
     
     var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q self destruct!', 
         '20px Arial',
