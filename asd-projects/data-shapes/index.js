@@ -54,9 +54,10 @@ $(document).ready(function () {
    currentShape.goodBehavior = "bounce";
    }
 
-    else if (currentShapes.color === "blue") { 
+    else if (currentShape.color === "blue") { 
       currentShape.goodBehavior = "blink";
      }
+    
   };
 
 
