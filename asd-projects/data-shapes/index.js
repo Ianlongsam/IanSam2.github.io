@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   // TODO 1: create a new shape object and add it to the array
 
-  shape = {
+  var shape = {
     color: "blue",
     shape: "circle",
     repeat: 3
@@ -48,8 +48,8 @@ $(document).ready(function () {
   dataShapes.push(shape);
 
   // TODO 2: add a new property to all data shapes
-  for (let i = 1; i < dataShapes.length; i++) {
-    currentShape = dataShapes[i]
+  for (let i = 0; i < dataShapes.length; i++) {
+    var currentShape = dataShapes[i]
     if (currentShape.color === "red") {
    currentShape.goodBehavior = "bounce";
    }
@@ -58,6 +58,9 @@ $(document).ready(function () {
       currentShape.goodBehavior = "blink";
      }
     
+    else {
+      currentShape.goodBehavior = "spin"
+    }
   };
 
 
