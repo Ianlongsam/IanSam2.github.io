@@ -1,0 +1,18 @@
+Describe the gameplay - Hitting ball back and forth with two paddles until one reached one another goals
+What are the conditions when the game begins? - Both players will start with 0 points and the ball in the middle and will always go to the right.
+Does the game have an end? If so, what are the conditions for when it ends? - When one side reach 12 points
+What ifs will there be? - Yes as when the ball hit the walls it will bounce off it
+
+Visual Game Components:
+What are the visual game components? For example, in Bouncing Box, the game components were the board and the box. - it would contain a box a black background and white paddles and borders
+Which will be static? - the board
+Which will be animated? - the paddles and the ball
+What data will you need to manage each game component? For example, in Bouncing Box, the data values were positionX, speedX, and points. - managing the paddles, speed, size. The ball we manage its position, size, and speed. For the score boxes, we need to manage the score for each player. For the timer, the time must be managed as well as decreasing it. 
+
+Events / Logic:
+What events will occur in this game? (timer events, keyboard events, clicking events?) - pressing the keyboard will change the position of the paddle. Collision will happen when the ball hit the paddles 
+How do those events affect the data of the program? - Same as above the keyboard affects the position of the keyboard, while the collision will occur when the ball hit the paddle 
+For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level! 
+Keyboard event - when pressing ws or up and down arrow key, after scoring a goal the reset the paddles
+Ending the game - once one player reached the 12th score, you can do a backflip and win
+
