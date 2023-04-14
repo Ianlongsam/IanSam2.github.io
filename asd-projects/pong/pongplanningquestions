@@ -15,4 +15,3 @@ How do those events affect the data of the program? - Same as above the keyboard
 For each "event", write out the high-level logic of what will happen. It is better (and tricky) to be as specific as you can while remaining high-level! 
 Keyboard event - when pressing ws or up and down arrow key, after scoring a goal the reset the paddles
 Ending the game - once one player reached the 12th score, you can do a backflip and win
-
